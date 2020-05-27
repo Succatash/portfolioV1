@@ -1,184 +1,186 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css);
 
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 header {
-	/* border: 1px solid orange; */
-	height: 100px;
+  /* border: 1px solid orange; */
+  height: 100px;
 }
 
 #name {
-	padding-top: 20px;
-	/* border: 1px solid purple; */
-	text-align: center;
-	color: red;
+  padding-top: 20px;
+  /* border: 1px solid purple; */
+  text-align: center;
+  color: red;
 }
 
-a {
-	border: 0;
+div.socialMediaIcons a {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
+
 #header {
-	height: 19rem;
-	background-image: linear-gradient(
-			rgba(0, 0, 255, 0.5),
-			rgba(255, 255, 0, 0.5)
-		),
-		url("https://images.unsplash.com/photo-1553798397-0aee146267a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
-	margin-bottom: 1.5rem;
+  height: 19rem;
+  background-image: linear-gradient(
+      rgba(0, 0, 255, 0.5),
+      rgba(255, 255, 0, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1553798397-0aee146267a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+  margin-bottom: 1.5rem;
 }
 
 #container {
-	display: flex;
-	justify-content: center;
-	padding-top: 2rem;
-	max-width: 40%;
-	margin: auto;
-	min-height: 6rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  max-width: 100%;
+  margin: auto;
+  min-height: 6rem;
 }
 
 div.socialMediaIcons {
-	position: relative;
-	float: left;
-	overflow: hidden;
-	margin: 10px 1%;
-	min-width: 2rem;
-	max-width: 4rem;
-	min-height: 2rem;
-	max-height: 4rem;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 2rem;
+  max-width: 4rem;
+  min-height: 2rem;
+  max-height: 4rem;
 }
 div.socialMediaIcons i {
-	position: relative;
-	max-width: 4rem;
-	max-height: 4rem;
-	min-width: 4rem;
-	min-height: 4rem;
-	/* border-radius: 50%; */
+  /* max-width: 4rem;
+	max-height: 4rem; */
+  margin-left: auto;
+  min-width: 4rem;
+  min-height: 4rem;
 }
 
 #facebook {
-	background-color: #3b5998;
-	color: white;
+  background-color: #3b5998;
+  color: white;
 }
 
 #linkedin {
-	background-color: #0e76a8;
+  background-color: #0e76a8;
 
-	color: white;
+  color: white;
 }
 
 #twitter {
-	background-color: #00acee;
-	color: white;
+  background-color: #00acee;
+  color: white;
 }
 
 #github {
-	background-color: #211f1f;
-	color: white;
+  background-color: #211f1f;
+  color: white;
 }
 
 #instagram {
-	color: white;
+  color: white;
 
-	background: radial-gradient(
-			circle farthest-corner at 35% 90%,
-			#fec564,
-			transparent 50%
-		),
-		radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
-		radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
-		radial-gradient(
-			ellipse farthest-corner at 20% -50%,
-			#5258cf,
-			transparent 50%
-		),
-		radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
-		radial-gradient(
-			ellipse farthest-corner at 60% -20%,
-			#893dc2,
-			transparent 50%
-		),
-		radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
-		linear-gradient(
-			#6559ca,
-			#bc318f 30%,
-			#e33f5f 50%,
-			#f77638 70%,
-			#fec66d 100%
-		);
+  background: radial-gradient(
+      circle farthest-corner at 35% 90%,
+      #fec564,
+      transparent 50%
+    ),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 20% -50%,
+      #5258cf,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 60% -20%,
+      #893dc2,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+    linear-gradient(
+      #6559ca,
+      #bc318f 30%,
+      #e33f5f 50%,
+      #f77638 70%,
+      #fec66d 100%
+    );
 }
 
 .grid {
-	display: grid;
-	grid-template-rows: auto auto;
-	grid-template-columns: 25vw 25vw 25vw;
-	justify-content: center;
-	gap: 1%;
-	/* border: 6px solid green; */
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 25vw 25vw 25vw;
+  justify-content: center;
+  gap: 1%;
+  /* border: 6px solid green; */
 }
 
 .card {
-	position: relative;
-	max-width: 100%;
-	vertical-align: top;
-	height: 210px;
-	float: left;
-	overflow: hidden;
-	margin: 10px 1%;
-	min-height: 220px;
-	min-width: 220px;
-	max-height: 100%;
-	background: #000000;
-	text-align: center;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  max-width: 100%;
+  vertical-align: top;
+  height: 210px;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-height: 220px;
+  min-width: 220px;
+  max-height: 100%;
+  background: #000000;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 #education {
 }
 
 div.card img {
-	width: 100%;
-	height: 100%;
-	vertical-align: top;
-	max-height: 100%;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  max-height: 100%;
 }
 
 div.card.red {
-	background-color: red;
+  background-color: red;
 }
 
 .card:hover img {
-	opacity: 0.6;
+  opacity: 0.6;
 }
 div.card * {
-	transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #footers {
-	background-color: black;
-	height: 100px;
-	margin-top: 1.5rem;
+  background-color: black;
+  height: 3200px;
+  margin-top: 1.5rem;
 }
 
 .textOverCard {
-	position: absolute;
-	color: black;
-	top: 70%;
-	left: 0%;
-	text-align: center;
-	height: 20px;
-	width: 100%;
+  position: absolute;
+  color: black;
+  top: 70%;
+  left: 0%;
+  text-align: center;
+  height: 20px;
+  width: 100%;
 }
 
 .textOverCard:hover {
-	color: pink;
-	top: 60%;
+  color: pink;
+  top: 60%;
 }
 
 footer {
-	height: 100px;
-	/* border: 1px red solid; */
+  height: 100px;
+  /* border: 1px red solid; */
 }

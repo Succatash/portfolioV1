@@ -1,6 +1,5 @@
-let cardss = document.getElementsByClassName("card red");
 let cards = document.querySelectorAll(".card");
-console.log(cards, cardss);
+console.log(cards);
 cards.forEach((el) =>
   el.addEventListener("click", () => console.log("clicked"))
 );
