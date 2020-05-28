@@ -8,7 +8,7 @@
 }
 
 header {
-	height: 100px;
+	height: 320px;
 }
 
 #name {
@@ -175,7 +175,7 @@ article.card * {
 /* FOOTER CSS */
 #footers {
 	background-color: black;
-	height: 3200px;
+	height: 320px;
 	margin-top: 1.5rem;
 }
 
@@ -188,4 +188,8 @@ footer {
 	color: white;
 	text-align: center;
 	padding-top: 5%;
+}
+
+.itemsForResume {
+	color: white;
 }
