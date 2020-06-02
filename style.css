@@ -32,7 +32,6 @@ header {
 #socialMediaContainer {
 	display: flex;
 	justify-content: center;
-	padding-top: 5rem;
 	max-width: 100%;
 	margin: auto;
 	min-height: 6rem;
@@ -132,18 +131,15 @@ div.grid {
 	float: left;
 	overflow: hidden;
 	margin: 10px 1%;
-	min-height: 220px;
-	min-width: 220px;
+	min-height: 320px;
+	min-width: 320px;
 	max-height: 100%;
-
 	background: #000000;
 	text-align: center;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
-#education {
-}
 
-article.card img {
+section.card img {
 	width: 100%;
 	height: 100%;
 	vertical-align: top;
@@ -151,9 +147,10 @@ article.card img {
 }
 
 .card:hover img {
-	opacity: 0.6;
+	opacity: 0;
 }
-article.card * {
+
+section.card * {
 	transition: all 0.5s ease-in-out;
 }
 
@@ -168,7 +165,6 @@ article.card * {
 }
 
 .textOverCard:hover {
-	color: pink;
 	top: 60%;
 }
 
@@ -190,6 +186,19 @@ footer {
 	padding-top: 5%;
 }
 
-.itemsForResume {
+li.itemsForResume {
 	color: white;
 }
+
+a:link {
+	text-decoration: none;
+	background-color: white;
+}
+
+.containerForFooter {
+	display: inline-block;
+	width: 100%;
+	height: 25%;
+}
+
+/* TODO: fix the ordering of everything to make it easier to read */
