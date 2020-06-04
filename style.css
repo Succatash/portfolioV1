@@ -57,9 +57,6 @@ div.grid {
 	text-align: center;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
-.card:hover {
-	opacity: 0.5;
-}
 
 section.card img {
 	width: 100%;

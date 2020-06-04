@@ -2,22 +2,22 @@ const cards = document.querySelectorAll(".card");
 const image_x = document.querySelectorAll("img.image");
 const randomColor = getRandomColor();
 
-image_x.forEach((el) =>
-	el.addEventListener("mouseout", () => {
-		image_x.style.display = "none";
-	})
-);
+// image_x.forEach((el) =>
+// 	el.addEventListener("mouseout", () => {
+// 		image_x.style.display = "none";
+// 	})
+// );
 
 // for (let i = 0; i < cards.length; i++) {
 //   cards[i].addEventListener("click", () => console.log("clicked"));
 // }
+cards.forEach((el) => el.addEventListener("mouseover", convertCards));
 
 function convertCards() {
-	this.style.backgroundColor = randomColor;
+	this.style.backgroundColor = getRandomColor();
 	console.log("clikc");
 }
 
-cards.forEach((el) => el.addEventListener("mouseover", convertCards));
 // TODO:add the random color generator
 
 function getRandomColor() {
