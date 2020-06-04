@@ -57,19 +57,25 @@ div.grid {
 	text-align: center;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
+.card:hover {
+	opacity: 0.5;
+}
 
 section.card img {
 	width: 100%;
 	height: 100%;
 	vertical-align: top;
 	max-height: 100%;
+	max-width: 100%;
+	min-width: 100%;
+	max-width: 100%;
 }
 
 section.card * {
 	transition: all 0.35s ease-in-out;
 }
 
-p {
+p.words {
 	color: white;
 	top: 24%;
 	text-align: center;
@@ -110,6 +116,7 @@ footer {
 #footerTag {
 	color: white;
 	text-align: center;
+	padding-top: 2rem;
 }
 
 a:link {
@@ -129,6 +136,7 @@ a:link {
 	max-width: 100%;
 	margin: auto;
 	min-height: 6rem;
+	padding-top: 1rem;
 }
 
 div.socialMediaIcons a {
@@ -212,3 +220,9 @@ div.socialMediaIcons i {
 		);
 }
 /* TODO: fix the ordering of everything to make it easier to read */
+
+.scale:hover {
+	transform: scale(1.15);
+}
+
+/* END of FOOTER */
