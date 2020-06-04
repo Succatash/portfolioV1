@@ -7,6 +7,8 @@
 	box-sizing: border-box;
 }
 
+/* HEADER */
+
 header {
 	height: 320px;
 }
@@ -29,6 +31,98 @@ header {
 	filter: grayscale(55%);
 }
 
+/* GRID AND CARDS */
+
+div.grid {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: 25vw 25vw 25vw;
+	justify-content: center;
+	gap: 1%;
+	/* border: 6px solid green; */
+}
+
+.card {
+	position: relative;
+	max-width: 100%;
+	vertical-align: top;
+	height: 210px;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-height: 320px;
+	min-width: 320px;
+	max-height: 100%;
+	background: #000000;
+	text-align: center;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+section.card img {
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+	max-height: 100%;
+}
+
+section.card * {
+	transition: all 0.35s ease-in-out;
+}
+
+p {
+	color: white;
+	top: 24%;
+	text-align: center;
+	height: 40px;
+	width: 100%;
+	min-height: 15em;
+}
+
+.textOverCard {
+	padding: 10px 0;
+	color: black;
+	top: 10%;
+	text-align: center;
+	height: 20px;
+	width: 100%;
+}
+
+.words {
+	color: white;
+}
+/* FOOTER CSS */
+
+footer {
+	max-height: 350px;
+	border: 1px red solid;
+	max-width: 100%;
+}
+
+.white {
+	color: white;
+}
+#footers {
+	background-color: black;
+	height: 320px;
+	margin-top: 1.5rem;
+}
+
+#footerTag {
+	color: white;
+	text-align: center;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+.containerForFooter {
+	display: inline-block;
+	width: 100%;
+	height: 25%;
+}
+
+/* SOCIAL MEDIA ICONS */
 #socialMediaContainer {
 	display: flex;
 	justify-content: center;
@@ -51,6 +145,10 @@ div.socialMediaIcons {
 	max-width: 4rem;
 	min-height: 2rem;
 	max-height: 4rem;
+}
+
+div.socialMeidaIcons:hover {
+	transform: scale(4);
 }
 div.socialMediaIcons i {
 	/* max-width: 4rem;
@@ -113,92 +211,4 @@ div.socialMediaIcons i {
 			#fec66d 100%
 		);
 }
-
-div.grid {
-	display: grid;
-	grid-template-rows: auto auto;
-	grid-template-columns: 25vw 25vw 25vw;
-	justify-content: center;
-	gap: 1%;
-	/* border: 6px solid green; */
-}
-
-.card {
-	position: relative;
-	max-width: 100%;
-	vertical-align: top;
-	height: 210px;
-	float: left;
-	overflow: hidden;
-	margin: 10px 1%;
-	min-height: 320px;
-	min-width: 320px;
-	max-height: 100%;
-	background: #000000;
-	text-align: center;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-}
-
-section.card img {
-	width: 100%;
-	height: 100%;
-	vertical-align: top;
-	max-height: 100%;
-}
-
-.card:hover img {
-	opacity: 0;
-}
-
-section.card * {
-	transition: all 0.5s ease-in-out;
-}
-
-.textOverCard {
-	position: absolute;
-	color: black;
-	top: 70%;
-	left: 0%;
-	text-align: center;
-	height: 20px;
-	width: 100%;
-}
-
-.textOverCard:hover {
-	top: 60%;
-}
-
-/* FOOTER CSS */
-#footers {
-	background-color: black;
-	height: 320px;
-	margin-top: 1.5rem;
-}
-
-footer {
-	height: 100px;
-	/* border: 1px red solid; */
-}
-
-#footerTag {
-	color: white;
-	text-align: center;
-	padding-top: 5%;
-}
-
-li.itemsForResume {
-	color: white;
-}
-
-a:link {
-	text-decoration: none;
-	background-color: white;
-}
-
-.containerForFooter {
-	display: inline-block;
-	width: 100%;
-	height: 25%;
-}
-
 /* TODO: fix the ordering of everything to make it easier to read */

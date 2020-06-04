@@ -1,26 +1,33 @@
-let cards = document.querySelectorAll(".card");
-let textOverCard = document.querySelectorAll(".textOverCard");
+const cards = document.querySelectorAll(".card");
+const image_x = document.getElementById("image");
+const tester = document.getElementById;
+const randomColor = getRandomColor();
 
-console.log(cards);
 cards.forEach((el) => el.addEventListener("mouseover", convertCards));
+
+cards.forEach((el) =>
+	el.addEventListener("mouseout", () => (image_x.style.display = "initial"))
+);
 
 // for (let i = 0; i < cards.length; i++) {
 //   cards[i].addEventListener("click", () => console.log("clicked"));
 // }
 
 function convertCards() {
-	this.style.backgroundColor = getRandomColor();
-	textOverCard.style.color = "purple";
-	this.innerHTML = "Hello Test Test Test";
-	console.log("mousedOver");
+	image_x.style.display = "none";
+	this.style.backgroundColor = randomColor;
+	console.log("clikc");
 }
 
 // TODO:add the random color generator
+
 function getRandomColor() {
 	const r = Math.floor(Math.random() * 256);
 	const g = Math.floor(Math.random() * 256);
 	const b = Math.floor(Math.random() * 256);
 	const o = Math.random() * 2;
-	// return `rgba(${r}, ${g}, ${b}, ${o})`;
-	return "rgb(" + r + ", " + g + ", " + b + ")";
+	return `rgba(${r}, ${g}, ${b})`;
+	// return "rgb(" + r + ", " + g + ", " + b + ")";
 }
+
+function removeImg() {}
