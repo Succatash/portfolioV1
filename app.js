@@ -1,7 +1,6 @@
 const cards = document.querySelectorAll(".card");
-
 const randomColor = getRandomColor();
-
+const image_x = document.querySelector(".image");
 cards.forEach((el) => el.addEventListener("mouseover", convertCards));
 
 cards.forEach((el) =>
@@ -13,9 +12,9 @@ cards.forEach((el) =>
 // }
 
 function convertCards() {
+	this.style.backgroundColor = getRandomColor();
+	console.log("click");
 	image_x.style.display = "none";
-	this.style.backgroundColor = randomColor;
-	console.log("clikc");
 }
 
 // TODO:add the random color generator
