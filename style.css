@@ -78,7 +78,11 @@ section.card * {
 	transition: all 0.35s ease-in-out;
 }
 
+span.inner {
+	padding: 5px;
+}
 p.words {
+	position: relative;
 	color: white;
 	top: 24%;
 	text-align: center;
@@ -87,7 +91,8 @@ p.words {
 	min-height: 15em;
 }
 
-.textOverCard {
+h3.textOverCard {
+	position: relative;
 	padding: 10px 0;
 	color: black;
 	top: 10%;
@@ -96,9 +101,6 @@ p.words {
 	width: 100%;
 }
 
-.words {
-	color: white;
-}
 /* FOOTER CSS */
 
 footer {
