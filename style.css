@@ -1,249 +1,250 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css);
 
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 /* HEADER */
 
 header {
-	height: 320px;
+  height: 320px;
 }
 
 #name {
-	padding-top: 20px;
+  padding-top: 20px;
 
-	text-align: center;
-	color: red;
+  text-align: center;
+  color: red;
 }
 
 #header {
-	height: 19rem;
-	background-image: linear-gradient(
-			rgba(0, 0, 255, 0.5),
-			rgba(255, 255, 0, 0.5)
-		),
-		url("https://images.unsplash.com/photo-1553798397-0aee146267a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
-	background-repeat: repeat-x;
-	margin-bottom: 1.5rem;
-	filter: grayscale(55%);
+  height: 19rem;
+  background-image: linear-gradient(
+      rgba(0, 0, 255, 0.5),
+      rgba(255, 255, 0, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1553798397-0aee146267a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+  background-repeat: repeat-x;
+  margin-bottom: 1.5rem;
+  filter: grayscale(55%);
 }
 
 /* GRID AND CARDS */
 
 div.grid {
-	display: grid;
-	grid-template-rows: auto auto;
-	grid-template-columns: 25vw 25vw 25vw;
-	justify-content: center;
-	gap: 2% 2%;
-	padding: 25px 0;
-	height: 720px;
-	/* border: 6px solid green; */
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 25vw 25vw 25vw;
+  justify-content: center;
+  gap: 2% 2%;
+  min-height: 1000px;
+  padding: 25px 0;
+  height: 720px;
+  /* border: 6px solid green; */
 }
 
 section.card {
-	position: relative;
-	max-width: 100%;
-	vertical-align: top;
-	height: 210px;
-	float: left;
-	overflow: hidden;
-	margin: 10px 1%;
-	min-height: 320px;
-	min-width: 320px;
-	max-height: 100%;
-	background-color: red;
-	text-align: center;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  max-width: 100%;
+  vertical-align: top;
+  height: 210px;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-height: 420px;
+  min-width: 320px;
+  max-height: 100%;
+  background-color: red;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
 .card img:hover {
-	opacity: 0.45;
+  opacity: 0.45;
 }
 section.card img {
-	width: 100%;
-	height: 100%;
-	vertical-align: top;
-	max-height: 100%;
-	max-width: 100%;
-	min-width: 100%;
-	max-width: 100%;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 section.card * {
-	transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 span.inner {
-	padding: 5px;
+  padding: 5px;
 }
 p.words {
-	position: relative;
-	color: white;
-	top: 24%;
-	text-align: center;
-	height: 40px;
-	width: 100%;
-	min-height: 15em;
+  position: relative;
+  color: white;
+  top: 24%;
+  text-align: center;
+  height: 40px;
+  width: 100%;
+  min-height: 15em;
 }
 
 h3.textOverCard {
-	position: relative;
-	padding: 10px 0;
-	color: black;
-	top: 10%;
-	text-align: center;
-	height: 20px;
-	width: 100%;
+  position: relative;
+  padding: 10px 0;
+  color: black;
+  top: 10%;
+  text-align: center;
+  height: 20px;
+  width: 100%;
 }
 
 /* FOOTER CSS */
 
 footer {
-	max-height: 350px;
-	max-width: 100%;
+  max-height: 350px;
+  max-width: 100%;
 }
 
 a.white {
-	color: rgb(19, 226, 54);
+  color: rgb(19, 226, 54);
 }
 
 a.white:hover {
-	color: red;
+  color: red;
 }
 
 #footers {
-	background-color: black;
-	height: 320px;
-	margin-top: 1.5rem;
+  background-color: black;
+  height: 320px;
+  margin-top: 1.5rem;
 }
 /* SOCIAL MEDIA ICONS */
 #socialMediaContainer {
-	display: flex;
-	justify-content: center;
-	max-width: 100%;
-	margin: auto;
-	min-height: 6rem;
-	padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin: auto;
+  min-height: 6rem;
+  padding-top: 3rem;
 }
 
 div.socialMediaIcons a {
-	margin: 0;
-	padding: 0;
-	border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 div.socialMediaIcons {
-	position: relative;
-	float: left;
-	overflow: hidden;
-	margin: 5px;
-	min-width: 2rem;
-	max-width: 4rem;
-	min-height: 2rem;
-	max-height: 4rem;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 5px;
+  min-width: 2rem;
+  max-width: 4rem;
+  min-height: 2rem;
+  max-height: 4rem;
 }
 
 div.socialMediaIcons i {
-	/* max-width: 4rem;
+  /* max-width: 4rem;
 	max-height: 4rem; */
-	padding: 0.5rem;
+  padding: 0.5rem;
 
-	min-width: 4rem;
-	min-height: 4rem;
-	text-align: center;
+  min-width: 4rem;
+  min-height: 4rem;
+  text-align: center;
 }
 
 #facebook {
-	background-color: #3b5998;
-	color: white;
+  background-color: #3b5998;
+  color: white;
 }
 
 #linkedin {
-	background-color: #0e76a8;
+  background-color: #0e76a8;
 
-	color: white;
+  color: white;
 }
 
 #twitter {
-	background-color: #00acee;
-	color: white;
+  background-color: #00acee;
+  color: white;
 }
 
 #github {
-	background-color: #211f1f;
-	color: white;
+  background-color: #211f1f;
+  color: white;
 }
 
 #instagram {
-	color: white;
+  color: white;
 
-	background: radial-gradient(
-			circle farthest-corner at 35% 90%,
-			#fec564,
-			transparent 50%
-		),
-		radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
-		radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
-		radial-gradient(
-			ellipse farthest-corner at 20% -50%,
-			#5258cf,
-			transparent 50%
-		),
-		radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
-		radial-gradient(
-			ellipse farthest-corner at 60% -20%,
-			#893dc2,
-			transparent 50%
-		),
-		radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
-		linear-gradient(
-			#6559ca,
-			#bc318f 30%,
-			#e33f5f 50%,
-			#f77638 70%,
-			#fec66d 100%
-		);
+  background: radial-gradient(
+      circle farthest-corner at 35% 90%,
+      #fec564,
+      transparent 50%
+    ),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 20% -50%,
+      #5258cf,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 60% -20%,
+      #893dc2,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+    linear-gradient(
+      #6559ca,
+      #bc318f 30%,
+      #e33f5f 50%,
+      #f77638 70%,
+      #fec66d 100%
+    );
 }
 /* TODO: fix the ordering of everything to make it easier to read */
 
 .scale:hover {
-	transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 #footerTag {
-	color: white;
-	text-align: center;
-	padding-top: 4rem;
+  color: white;
+  text-align: center;
+  padding-top: 4rem;
 }
 
 /* footer legal like linlks*/
 
 /* TODO:make this so its more in local*/
 a.white:link {
-	text-decoration: none;
+  text-decoration: none;
 }
 /* 
 a.white:visited {
 	color: yellow;
 } */
 .containerForFooter {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 13%;
-	width: 100%;
-	height: 25%;
-	padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 13%;
+  width: 100%;
+  height: 25%;
+  padding-top: 2rem;
 }
 .footerBlock {
-	position: relative;
+  position: relative;
 }
 
 li {
-	padding: 3px 0;
+  padding: 3px 0;
 }
 /* END of FOOTER */
