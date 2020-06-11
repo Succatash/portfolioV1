@@ -95,7 +95,14 @@ p.words {
 }
 
 ul.resumeList {
-	margin-top: 9%;
+	left: 1rem;
+	padding: 2rem;
+	list-style-position: outside;
+	position: relative;
+}
+
+ul.resumeList li {
+	text-align: start;
 }
 li span.colorListItems {
 	color: white;
